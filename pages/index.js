@@ -17,9 +17,9 @@ class Index extends React.Component {
                   <div className={`flipper`}>
                     <div className="back">
                       <div className="hero-section-content">
-                        <h2> Full Stack Web Developer </h2>
+                        <h2> Designer & Web Developer </h2>
                         <div className="hero-section-content-intro">
-                          Have a look at my portfolio and job history.
+                          Take a look at my range of projects.
                         </div>
                       </div>
                       <img className="image" src="/images/section-1.png" />
@@ -33,9 +33,9 @@ class Index extends React.Component {
               <Col md="6" className="hero-welcome-wrapper">
                 <div className="hero-welcome-text">
                   <h1>
-                    Welcome to the portfolio website of Filip Jerga. Get
-                    informed, collaborate and discover projects I was working on
-                    through the years!
+                    Welcome to the portfolio website of Murray Williams. This
+                    site is built using Nextjs as a Fullstack application that
+                    pulls portfolio data from MongoDB.
                   </h1>
                 </div>
                 <div className="hero-welcome-bio">
