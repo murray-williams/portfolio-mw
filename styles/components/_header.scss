@@ -11,6 +11,10 @@
       text-transform: uppercase;
       letter-spacing: 1px;
       font-weight: bold;
+
+      &:hover {
+        text-decoration: none;
+      }
     }
 
     &-item {
@@ -26,12 +30,12 @@
       text-transform: uppercase;
 
       &.active {
-        color: #ffcc5c;
+        color: #b73092;
       }
 
       &:hover,
       &:focus {
-        color: #ffcc5c;
+        color: #b73092;
       }
     }
   }

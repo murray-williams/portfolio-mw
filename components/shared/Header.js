@@ -9,6 +9,8 @@ import {
   NavItem,
 } from 'reactstrap'
 
+import { GiAbstract018 } from 'react-icons/gi'
+
 const BsNavLink = (props) => {
   const { href, title } = props
   return (
@@ -32,7 +34,9 @@ const Header = () => {
       >
         <div className="navbar-brand">
           <Link href="/">
-            <a className="port-navbar-brand">Murray Williams</a>
+            <a className="port-navbar-brand">
+              <GiAbstract018 size="2rem" /> MW |
+            </a>
           </Link>
         </div>
 

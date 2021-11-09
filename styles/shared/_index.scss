@@ -1,6 +1,6 @@
 // Index -----------
 .cover {
-  background-image: linear-gradient(45deg, #4a91f2 0%, #4a91f2 100%);
+  background-image: linear-gradient(45deg, #1d1844 0%, #371c54 100%);
   overflow: hidden;
   position: relative;
 }
@@ -99,8 +99,8 @@
   height: 100%;
   position: absolute;
   top: 0;
-  box-shadow: -17px 13px 41px rgba(13, 78, 158, 0.6);
-  border: 2px solid #3bace5;
+  box-shadow: -17px 13px 41px rgb(142 13 158 / 60%);
+  border: 2px solid #b73092;
 
   .shadow-inner {
     width: 100%;
