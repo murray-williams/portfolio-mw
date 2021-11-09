@@ -1,12 +1,15 @@
 import BaseLayout from '../../components/layouts/BaseLayout'
+import BasePage from '../../components/BasePage'
 import { useRouter } from 'next/router'
 import axios from 'axios'
 
 export default function PortfolioDetail({ portfolio }) {
   return (
     <BaseLayout>
-      <h1>{portfolio.title}</h1>
-      <p>{portfolio.body}</p>
+      <BasePage>
+        <h1>{portfolio.title}</h1>
+        <p>{portfolio.body}</p>
+      </BasePage>
     </BaseLayout>
   )
 }
