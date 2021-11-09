@@ -7,9 +7,9 @@ const roles = [
   'Product Owner',
   'Developer',
   'Designer',
-  'Tech Lover',
+  'Digital Enthusiast',
   'Team Player',
-  'React JS',
+  'React JS Developer',
 ]
 
 class Index extends React.Component {
@@ -29,7 +29,7 @@ class Index extends React.Component {
                       <div className="hero-section-content">
                         <h2> Designer & Web Developer </h2>
                         <div className="hero-section-content-intro">
-                          Take a look at my range of projects.
+                          Built with NextJS & MongoDB.
                         </div>
                       </div>
                       <img className="image" src="/images/section-1.png" />
@@ -42,11 +42,10 @@ class Index extends React.Component {
               </Col>
               <Col md="6" className="hero-welcome-wrapper">
                 <div className="hero-welcome-text">
-                  <h1>
-                    Welcome to the portfolio website of Murray Williams. This
-                    site is built using Nextjs as a Fullstack application that
-                    pulls portfolio data from MongoDB.
-                  </h1>
+                  <h1>Welcome to my portfolio.</h1>
+                </div>
+                <div className="hero-welcome-exp">
+                  <h2>I wear many hats...</h2>
                 </div>
                 <Typed
                   loop
@@ -56,11 +55,12 @@ class Index extends React.Component {
                   backDelay={2000}
                   loopCount={0}
                   showCursor
+                  shuffle
                   className="self-typed"
                   cursorChar="|"
                 />
                 <div className="hero-welcome-bio">
-                  <h1>Let's take a look on my work.</h1>
+                  <h1>Let's take a look around.</h1>
                 </div>
               </Col>
             </Row>
