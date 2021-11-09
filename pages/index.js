@@ -1,6 +1,7 @@
 import React from 'react'
+import { BiRightArrow } from 'react-icons/bi'
 import BaseLayout from '@/components/layouts/BaseLayout'
-import { Container, Row, Col } from 'reactstrap'
+import { Container, Row, Col, Button } from 'reactstrap'
 import Typed from 'react-typed'
 
 const roles = [
@@ -61,6 +62,9 @@ class Index extends React.Component {
                 />
                 <div className="hero-welcome-bio">
                   <h1>Let's take a look around.</h1>
+                  <Button className="hero-welcome-btn">
+                    View Projects <BiRightArrow size="1rem" />
+                  </Button>
                 </div>
               </Col>
             </Row>
