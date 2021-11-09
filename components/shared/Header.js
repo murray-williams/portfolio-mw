@@ -1,13 +1,6 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-} from 'reactstrap'
+import { Collapse, Navbar, NavbarToggler, Nav, NavItem } from 'reactstrap'
 
 import { GiAlliedStar } from 'react-icons/gi'
 
