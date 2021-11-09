@@ -7,9 +7,11 @@ import Link from 'next/link'
 
 const roles = [
   'Product Owner',
-  'Developer',
-  'Designer',
+  'UI Designer',
+  'Next JS Developer',
+  'Analytics Lover',
   'Digital Enthusiast',
+  'Notion Specialist',
   'Team Player',
   'React JS Developer',
 ]
@@ -46,9 +48,9 @@ class Index extends React.Component {
                 <div className="hero-welcome-text">
                   <h1>Welcome to my portfolio.</h1>
                 </div>
-                <div className="hero-welcome-exp">
+                {/* <div className="hero-welcome-exp">
                   <h2>I wear many hats...</h2>
-                </div>
+                </div> */}
                 <Typed
                   loop
                   typeSpeed={30}
@@ -62,7 +64,7 @@ class Index extends React.Component {
                   cursorChar="|"
                 />
                 <div className="hero-welcome-bio">
-                  <h1>Let's take a look around.</h1>
+                  <h3>Want to see some of my latest projects?</h3>
                   <Link href="/portfolios">
                     <Button className="hero-welcome-btn">
                       View Projects <BiRightArrow size="1rem" />
