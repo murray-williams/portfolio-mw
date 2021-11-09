@@ -1,4 +1,4 @@
-import Header from '../shared/Header'
+import Header from '@/components/shared/Header'
 
 export default function BaseLayout({ children, className }) {
   return (
