@@ -2,16 +2,16 @@ import BaseLayout from '@/components/layouts/BaseLayout'
 import BasePage from '@/components/BasePage'
 import axios from 'axios'
 import Link from 'next/link'
-import { useGetPosts } from '@/actions'
+import { useGetData } from '@/actions'
 
 export default function Portfolios() {
-  const { posts, error, loading } = useGetPosts()
+  const { data, error, loading } = useGetData('/api/v1/posts')
 
-  const renderPosts = (posts) => {
-    return posts.map((post) => (
-      <li key={post.id}>
-        <Link href={`/portfolios/${post.id}`}>
-          <a>{post.title}</a>
+  const renderPosts = (data) => {
+    return data.map((item) => (
+      <li key={item.id}>
+        <Link href={`/portfolios/${item.id}`}>
+          <a>{item.title}</a>
         </Link>
       </li>
     ))
@@ -21,7 +21,7 @@ export default function Portfolios() {
       <BasePage>
         <h1>I am portfolios page</h1>
         {loading && <p>Loading...</p>}
-        {posts && <ul>{renderPosts(posts)}</ul>}
+        {data && <ul>{renderPosts(data)}</ul>}
         {error && <div className="alert alert-danger">{error.message} </div>}
       </BasePage>
     </BaseLayout>
