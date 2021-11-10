@@ -1,11 +1,10 @@
 import BaseLayout from '@/components/layouts/BaseLayout'
 import BasePage from '@/components/BasePage'
-import axios from 'axios'
 import Link from 'next/link'
-import { useGetData } from '@/actions'
+import { useGetPosts } from '@/actions'
 
 export default function Portfolios() {
-  const { data, error, loading } = useGetData('/api/v1/posts')
+  const { data, error, loading } = useGetPosts()
 
   const renderPosts = (data) => {
     return data.map((item) => (
